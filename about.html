@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - SDA School</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
   <!-- Header -->
   <header>
   <div class="logo-box">
-    <img src="./image/school-logo.jpg" alt="logo">
+    <img src="./images/school-logo.jpg" alt="logo">
     <span>SDA School</span>
   </div>
 
@@ -40,7 +41,7 @@
 
       <div class="journey-grid">
         <div class="journey-image" data-aos="fade-right">
-          <img src="./image/Classroom-1.jpeg" alt="Students learning together">
+          <img src="./images/Classroom-1.jpeg" alt="Students learning together">
         </div>
 
         <div class="journey-text" data-aos="fade-left">
@@ -106,7 +107,7 @@
 
       <div class="leader-row">
         <div class="leader-image" data-aos="fade-right">
-          <img src="./image/Principal.JPG" alt="Principal">
+          <img src="./images/Principal.JPG" alt="Principal">
         </div>
         <div class="leader-content" data-aos="fade-left">
           <h3>Principal</h3>
@@ -124,7 +125,7 @@
 
       <div class="leader-row reverse">
         <div class="leader-image" data-aos="fade-right">
-          <img src="./image/Treasurer.JPG" alt="Treasurer">
+          <img src="./images/Treasurer.JPG" alt="Treasurer">
         </div>
         <div class="leader-content" data-aos="fade-left">
           <h3>Treasurer</h3>
@@ -147,30 +148,32 @@
       <h2 class="section-title" data-aos="fade-up">Our Achievements</h2>
 
       <div class="achieve-grid">
-        <div class="achieve-card" data-aos="flip-left" data-aos-delay="100">
-          <div class="card-icon"><i class="fa-solid fa-graduation-cap">🎓</i></div>
-          <h3>100%</h3>
-          <p>results in academic success</p>
-        </div>
 
-        <div class="achieve-card" data-aos="flip-left" data-aos-delay="200">
-          <div class="card-icon"><i class="fa-solid fa-person-chalkboard">👨‍🏫</i></div>
-          <h3>50+</h3>
-          <p>Highly experienced teachers guiding every student</p>
-        </div>
+  <div class="achieve-card" data-aos="zoom-in" data-aos-delay="100">
+    <div class="card-icon">🎓</div>
+    <h3>100%</h3>
+    <p>results in academic success</p>
+  </div>
 
-        <div class="achieve-card" data-aos="flip-left" data-aos-delay="300">
-          <div class="card-icon"><i class="fa-solid fa-school">🏫</i></div>
-          <h3>Advanced</h3>
-          <p>Modern facilities</p>
-        </div>
+  <div class="achieve-card" data-aos="zoom-in" data-aos-delay="200">
+    <div class="card-icon">👨‍🏫</div>
+    <h3>50+</h3>
+    <p>Highly experienced teachers guiding every student</p>
+  </div>
 
-        <div class="achieve-card" data-aos="flip-left" data-aos-delay="400">
-          <div class="card-icon"><i class="fa-solid fa-party-horn">🎉</i></div>
-          <h3>25+</h3>
-          <p>Years of Educational Excellence</p>
-        </div>
-      </div>
+  <div class="achieve-card" data-aos="zoom-in" data-aos-delay="300">
+    <div class="card-icon">🏫</div>
+    <h3>Advanced</h3>
+    <p>Modern facilities</p>
+  </div>
+
+  <div class="achieve-card" data-aos="zoom-in" data-aos-delay="400">
+    <div class="card-icon">🎉</div>
+    <h3>25+</h3>
+    <p>Years of Educational Excellence</p>
+  </div>
+
+</div>
     </div>
   </section>
 
@@ -179,7 +182,7 @@
     <div class="container footer-grid">
       <div class="footer-col brand-col">
         <div class="footer-brand">
-          <img src="image/logo.png" alt="SDA logo" />
+          <img src="./images/school-logo.jpg" alt="SDA logo" />
           <div>
             <h3>SDA School</h3>
             <p>Empowering young minds for a bright future since 1995</p>
@@ -219,7 +222,14 @@
     </div>
   </footer>
 
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-  <script src="script.js"></script>
+   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: "ease-in-out"
+  });
+</script>
 </body>
 </html>
